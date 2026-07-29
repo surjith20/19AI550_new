@@ -1,6 +1,6 @@
 # Ex.No: 5  Implementation of Steering behaviour-Pursue and Evade in Unity
-### DATE: 14-02-2026                                                                  
-### REGISTER NUMBER : 212223043005
+### DATE: 29-07-2026                                                                  
+### REGISTER NUMBER : 212223043006
 ### AIM: 
 To write a program to simulate the process of Pursue and Evade behavior in Unity using NavigationMeshAgent. 
 ### Algorithm:
@@ -56,15 +56,17 @@ public class Player_movement : MonoBehaviour
 
 **Evader script**
 ```
+using UnityEngine;
+
 public class Evader : MonoBehaviour
 {
     // Start is called before the first frame update
-    public NavMeshAgent agent;
+    public UnityEngine.AI.NavMeshAgent agent;
     public Transform target;
     public float evadespeed;
     void Start()
     {
-        agent= GetComponent<NavMeshAgent>();
+        agent= GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
 
     void evade()
@@ -80,19 +82,22 @@ public class Evader : MonoBehaviour
         evade();          
      }
 }
+
 ```
 
 **Pursuer script**
 ```
+using UnityEngine;
+
 public class Pursuer: MonoBehaviour
 {
     // Start is called before the first frame update
-    public NavMeshAgent agent;
+    public UnityEngine.AI.NavMeshAgent agent;
     public Transform target;
     public float speed;
     void Start()
     {
-        agent=this.GetComponent<NavMeshAgent>();
+        agent=this.GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
        // Update is called once per frame
     void pursue()
@@ -107,6 +112,7 @@ public class Pursuer: MonoBehaviour
         pursue();          
      }
 }
+
 ```
 7. Attach the Script to each player,pursuer and Evader.
    Drag & Drop the Target from the Hierarchy into the "Target" field in the script component ( For pursuer and Evader).
@@ -114,7 +120,8 @@ public class Pursuer: MonoBehaviour
 13. Stop the program
 
 ### Output:
-<img width="1915" height="971" alt="image" src="https://github.com/user-attachments/assets/110d5184-fade-418a-8bb2-0a4f26f78691" />
+<img width="1917" height="1077" alt="image" src="https://github.com/user-attachments/assets/b819f185-b054-4ad3-b2ad-fb5d503e257e" />
+
 
 
 ### Result:
