@@ -1,7 +1,7 @@
 # Ex.No: 10  Implementation of 3D Game – Penalty Kick Game
 
-### DATE: 23-03-2026
-### REGISTER NUMBER: 212223043005
+### DATE: 08-09-2026
+### REGISTER NUMBER: 212223043006
 
 ## AIM:
 To develop a **3D Penalty Kick Game** in Unity using physics and simple AI strategy.
